@@ -18,12 +18,12 @@ export default function HeroSection() {
           <Logo />
           <div className="hidden md:flex items-center gap-3">
             <span className="text-xs text-slate-300 flex items-center gap-2 bg-slate-800/60 border border-slate-700 px-3 py-1.5 rounded-full">
-              <Shield size={14} className="text-emerald-400" />
+              <Shield size={14} className="text-[#FAA52E]" />
               Licensed by QCB Sandbox
             </span>
             <a
               href="#download"
-              className="inline-flex items-center justify-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-emerald-400"
+              className="inline-flex items-center justify-center rounded-full bg-[#227384] px-4 py-2 text-sm font-semibold text-white transition hover:brightness-110"
             >
               Download the App
             </a>
@@ -47,7 +47,7 @@ export default function HeroSection() {
       <div className="relative z-10 mx-auto max-w-7xl px-6 pt-20 pb-24 lg:pt-28 lg:pb-40">
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-emerald-300 text-xs font-medium">
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#227384]/40 bg-[#227384]/15 px-3 py-1 text-[#FAA52E] text-xs font-medium">
               <BadgeCheck size={14} />
               Save Smart, Together
             </div>
@@ -61,13 +61,13 @@ export default function HeroSection() {
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
                 href="#join"
-                className="inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg shadow-emerald-500/20 transition hover:bg-emerald-400"
+                className="inline-flex items-center justify-center rounded-full bg-[#227384] px-6 py-3 text-sm font-semibold text-white transition hover:brightness-110"
               >
                 Join the Circle
               </a>
               <a
                 href="#download"
-                className="inline-flex items-center justify-center rounded-full border border-slate-700 bg-slate-900/50 px-6 py-3 text-sm font-semibold text-white backdrop-blur hover:bg-slate-900/70"
+                className="inline-flex items-center justify-center rounded-full border border-[#FAA52E] text-[#FAA52E] bg-slate-900/40 px-6 py-3 text-sm font-semibold backdrop-blur hover:bg-slate-900/60"
               >
                 Download the App
               </a>
@@ -76,11 +76,11 @@ export default function HeroSection() {
             {/* Avatar ring animation */}
             <div className="mt-10">
               <div className="relative h-36 w-36">
-                <div className="absolute inset-0 rounded-full border border-emerald-500/30 animate-spin-slow"></div>
+                <div className="absolute inset-0 rounded-full border border-[#227384]/40 animate-spin-slow"></div>
                 {[...Array(8)].map((_, i) => (
                   <span
                     key={i}
-                    className="absolute h-8 w-8 rounded-full border-2 border-slate-900 bg-gradient-to-br from-emerald-400 to-cyan-400 shadow-md"
+                    className="absolute h-8 w-8 rounded-full border-2 border-slate-900 bg-gradient-to-br from-[#FAA52E] to-[#227384] shadow-md"
                     style={{
                       top: `${50 + 42 * Math.sin((i * Math.PI) / 4)}%`,
                       left: `${50 + 42 * Math.cos((i * Math.PI) / 4)}%`,
@@ -102,7 +102,7 @@ export default function HeroSection() {
                 <div className="rounded-xl bg-gradient-to-br from-slate-800 to-slate-900 p-4 text-sm text-slate-300 h-full flex flex-col">
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-slate-400">Wafir Wallet</span>
-                    <span className="text-xs text-emerald-400">Next payout: 05:12:33</span>
+                    <span className="text-xs" style={{ color: '#FAA52E' }}>Next payout: 05:12:33</span>
                   </div>
                   <div className="mt-4 grid grid-cols-2 gap-3">
                     {["Contribute", "Members", "Schedule", "Rewards"].map((t) => (
@@ -113,7 +113,7 @@ export default function HeroSection() {
                     ))}
                   </div>
                   <div className="mt-auto">
-                    <button className="mt-4 w-full rounded-lg bg-emerald-500 py-2 text-slate-900 font-semibold hover:bg-emerald-400">
+                    <button className="mt-4 w-full rounded-lg bg-[#227384] py-2 text-white font-semibold hover:brightness-110">
                       Contribute Now
                     </button>
                   </div>
@@ -121,7 +121,7 @@ export default function HeroSection() {
               </div>
             </div>
             <div className="mt-4 flex items-center gap-2 text-xs text-slate-300">
-              <Shield size={14} className="text-emerald-400" /> Licensed by QCB Sandbox
+              <Shield size={14} className="text-[#FAA52E]" /> Licensed by QCB Sandbox
             </div>
           </div>
         </div>
